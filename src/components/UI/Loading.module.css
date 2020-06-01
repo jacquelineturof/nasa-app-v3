@@ -1,0 +1,44 @@
+.Container {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.Top,
+.Bottom {
+    height: 50%;
+    width: 100%;
+}
+
+.Bottom {
+    background-color: #0F3E94;
+}
+
+.Icon {
+    color: #F03D29;
+    font-size: 13rem;
+    animation: infinite-spinning 2s infinite;
+}
+
+.IconContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes infinite-spinning {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,101 @@
+.MediaSearchContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.Header {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Heading {
+    width: 25%;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    position: absolute;
+    top: 60vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+}
+
+.HeaderImage {
+    width: 40%;
+    height: 80%;
+}
+
+.Input {
+    border: none;
+    outline: none;
+    height: 10vh;
+    width: 60vw;
+    font-size: 1rem;
+}
+
+.InputContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 15px -5px #00000070;
+    display: flex;
+}
+
+.Bottom {
+    background-color: #eee;
+    height: 50%;
+    width: 100%;
+}
+
+.IconContainer {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.Icon {
+    font-size: 1.75rem;
+}
+
+.Button {
+    background-color: #0F3E94;
+    width: 20%;
+    font-family: 'Lato', sans-serif;
+    border: none;
+    outline: none;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+    .HeaderImage {
+        width: 80%;
+    }
+
+    .Icon {
+        font-size: 1rem;
+    }
+
+    .Input {
+        font-size: .9rem;
+    }
+
+    .Button {
+        font-size: .75rem;
+        width: 30%;
+    }
+
+    .Heading {
+        width: 80%;
+    }
+}

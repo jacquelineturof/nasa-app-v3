@@ -1,0 +1,81 @@
+.MediaContainer {
+    height: 100%;
+    width: 100%;
+}
+
+.ResultImageContainer {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.ResultImage {
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.ResultImageCaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    transition: all 0.5s;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+.ResultImageContainer:hover .ResultImageCaption {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.ResultImageContainer:hover .ResultImage {
+    transform: scale(1.3) rotate(15deg);
+}
+
+.CardIcon {
+    position: absolute;
+    top: 90;
+    right: 10;
+    color: white;
+    z-index: 1000;
+}
+
+.CaptionDescription,
+.CaptionTilte {
+    margin: 0;
+    width: 80%;
+    overflow: hidden;
+}
+
+.CaptionDescription {
+    height: 80%;
+}
+
+.CaptionTitle {
+    height: 10%;
+}
+
+.Icon {
+    color: white;
+}
+
+.VideoContainer,
+.Video {
+    height: 100%;
+    width: 100%;
+}
+
+.VideoContainer {
+    position: relative;
+}
